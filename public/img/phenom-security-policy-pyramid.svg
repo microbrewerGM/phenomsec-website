@@ -1,33 +1,87 @@
-<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="600" height="400" fill="#f8f9fa"/>
+<svg width="700" height="500" viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Professional gradients -->
+    <linearGradient id="policyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="standardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="procedureGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
 
-  <!-- Pyramid layers -->
+    <filter id="shadow3d" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="500" fill="#f8fafc"/>
+
+  <!-- Professional pyramid with 3D effect -->
   <!-- Policy (top) -->
-  <polygon points="300,80 200,140 400,140" fill="#1e40af" stroke="#1e3a8a" stroke-width="2"/>
-  <text x="300" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">POLICY</text>
+  <polygon points="350,100 280,160 420,160" fill="url(#policyGrad)" stroke="#1e3a8a" stroke-width="2" filter="url(#shadow3d)"/>
+  <polygon points="350,100 420,160 430,150 360,90" fill="#1e3a8a" opacity="0.6"/>
+  <text x="350" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">POLICY</text>
 
   <!-- Process -->
-  <polygon points="300,80 170,180 430,180 400,140 200,140" fill="#2563eb" stroke="#1e40af" stroke-width="2"/>
-  <text x="300" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">PROCESS</text>
+  <polygon points="350,100 250,200 450,200 420,160 280,160" fill="url(#processGrad)" stroke="#1e40af" stroke-width="2" filter="url(#shadow3d)"/>
+  <polygon points="350,100 450,200 460,190 370,90" fill="#1e40af" opacity="0.6"/>
+  <text x="350" y="175" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">PROCESS</text>
 
   <!-- Standard -->
-  <polygon points="300,80 140,220 460,220 430,180 170,180" fill="#3b82f6" stroke="#2563eb" stroke-width="2"/>
-  <text x="300" y="195" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">STANDARD</text>
+  <polygon points="350,100 220,240 480,240 450,200 250,200" fill="url(#standardGrad)" stroke="#2563eb" stroke-width="2" filter="url(#shadow3d)"/>
+  <polygon points="350,100 480,240 490,230 380,90" fill="#2563eb" opacity="0.6"/>
+  <text x="350" y="215" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">STANDARD</text>
 
   <!-- Procedure (bottom) -->
-  <polygon points="300,80 110,260 490,260 460,220 140,220" fill="#60a5fa" stroke="#3b82f6" stroke-width="2"/>
-  <text x="300" y="235" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">PROCEDURE</text>
+  <polygon points="350,100 190,280 510,280 480,240 220,240" fill="url(#procedureGrad)" stroke="#3b82f6" stroke-width="2" filter="url(#shadow3d)"/>
+  <polygon points="350,100 510,280 520,270 390,90" fill="#3b82f6" opacity="0.6"/>
+  <text x="350" y="255" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">PROCEDURE</text>
 
-  <!-- Title -->
-  <text x="300" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1f2937">Traditional Policy Pyramid</text>
+  <!-- Professional title -->
+  <text x="350" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1f2937">
+    Traditional Policy Pyramid
+  </text>
+  <text x="350" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#6b7280">
+    Information Security Framework Hierarchy
+  </text>
 
-  <!-- Descriptions -->
-  <text x="50" y="300" font-family="Arial, sans-serif" font-size="12" fill="#374151">• Policies: High-level organizational directives</text>
-  <text x="50" y="320" font-family="Arial, sans-serif" font-size="12" fill="#374151">• Processes: Broad implementation approaches</text>
-  <text x="50" y="340" font-family="Arial, sans-serif" font-size="12" fill="#374151">• Standards: Specific technical requirements</text>
-  <text x="50" y="360" font-family="Arial, sans-serif" font-size="12" fill="#374151">• Procedures: Step-by-step instructions</text>
+  <!-- Enhanced descriptions with icons -->
+  <g transform="translate(80, 320)">
+    <rect width="540" height="120" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" rx="8" filter="url(#shadow3d)"/>
 
-  <!-- Phenom Security branding -->
-  <text x="550" y="390" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#6b7280">Phenom Security</text>
+    <!-- Policy description -->
+    <circle cx="30" cy="25" r="8" fill="#1e40af"/>
+    <text x="50" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Policies</text>
+    <text x="120" y="30" font-family="Arial, sans-serif" font-size="11" fill="#374151">High-level organizational directives and strategic security guidance</text>
+
+    <!-- Process description -->
+    <circle cx="30" cy="50" r="8" fill="#2563eb"/>
+    <text x="50" y="55" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Processes</text>
+    <text x="120" y="55" font-family="Arial, sans-serif" font-size="11" fill="#374151">Broad implementation approaches and operational workflows</text>
+
+    <!-- Standard description -->
+    <circle cx="30" cy="75" r="8" fill="#3b82f6"/>
+    <text x="50" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Standards</text>
+    <text x="120" y="80" font-family="Arial, sans-serif" font-size="11" fill="#374151">Specific technical requirements and implementation criteria</text>
+
+    <!-- Procedure description -->
+    <circle cx="30" cy="100" r="8" fill="#60a5fa"/>
+    <text x="50" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Procedures</text>
+    <text x="120" y="105" font-family="Arial, sans-serif" font-size="11" fill="#374151">Detailed step-by-step implementation instructions</text>
+  </g>
+
+  <!-- Phenom Security Phoenix branding -->
+  <text x="620" y="485" font-family="Arial, sans-serif" font-size="12" text-anchor="end" fill="#6366f1" font-weight="bold">
+    🔥 Phenom Security Phoenix Framework
+  </text>
 </svg>
