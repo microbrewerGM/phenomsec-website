@@ -15,13 +15,28 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // TODO: Implement form submission logic
-    console.log('Form submitted:', formData);
-    setTimeout(() => {
+    // Implement secure form submission
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Thank you for your message. We will respond within 24 hours.');
+        setFormData({ name: '', email: '', company: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      console.error('Contact form submission error:', error);
+      alert('Sorry, there was an error sending your message. Please try again or contact us directly at hello@phenomsec.com');
+    } finally {
       setIsSubmitting(false);
-      alert('Thank you for your message. We will be in touch within 24 hours.');
-      setFormData({ name: '', email: '', company: '', message: '' });
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -124,11 +139,11 @@ export default function ContactForm() {
           </form>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 text-center">
           <div>
             <div className="text-cyan-400 text-2xl mb-2">📞</div>
             <h3 className="text-white font-semibold mb-1">Phone</h3>
-            <p className="text-slate-300">(555) 123-CYBER</p>
+            <p className="text-slate-300">(555) 766-3466</p>
           </div>
           <div>
             <div className="text-cyan-400 text-2xl mb-2">✉️</div>
@@ -138,7 +153,7 @@ export default function ContactForm() {
           <div>
             <div className="text-cyan-400 text-2xl mb-2">🏢</div>
             <h3 className="text-white font-semibold mb-1">Headquarters</h3>
-            <p className="text-slate-300">United States</p>
+            <p className="text-slate-300">San Francisco, CA</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,39 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Security Insights Blog - Latest Cybersecurity Research",
+  description: "Expert cybersecurity insights, research-driven perspectives, and security frameworks from Phenom Security's diverse team of experts. Stay ahead with cutting-edge security knowledge.",
+  keywords: [
+    "cybersecurity blog",
+    "security insights",
+    "security research",
+    "factorial separation of duties",
+    "policy pyramid",
+    "security frameworks",
+    "DevSecOps",
+    "application security",
+    "compliance frameworks",
+    "security best practices"
+  ],
+  openGraph: {
+    title: "Security Insights Blog - Latest Cybersecurity Research",
+    description: "Expert cybersecurity insights, research-driven perspectives, and security frameworks from Phenom Security's diverse team of experts.",
+    url: "https://phenomsec.com/blog",
+    type: "website",
+    images: [
+      {
+        url: "/img/phenom-security-claim-pyramid.svg",
+        width: 700,
+        height: 600,
+        alt: "Phenom Security Research Frameworks"
+      }
+    ]
+  },
+  alternates: {
+    canonical: "https://phenomsec.com/blog"
+  }
+};
 
 export default function BlogPage() {
   const blogPosts = [
@@ -135,10 +170,10 @@ export default function BlogPage() {
               <Link href="/#about" className="text-slate-400 hover:text-cyan-400 transition-colors">About</Link>
               <Link href="/blog" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</Link>
               <Link href="/#contact" className="text-slate-400 hover:text-cyan-400 transition-colors">Contact</Link>
-              <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">Privacy</Link>
+              <Link href="/privacy" className="text-slate-400 hover:text-cyan-400 transition-colors">Privacy</Link>
             </div>
             <div className="text-slate-500 text-sm">
-              © 2024 Phenom Security Group. All rights reserved.
+              © 2025 Phenom Security Group. All rights reserved.
             </div>
           </div>
         </div>

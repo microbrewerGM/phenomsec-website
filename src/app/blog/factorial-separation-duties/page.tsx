@@ -1,5 +1,46 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Factorial Separation of Duties for Modern AppSec Compliance",
+  description: "Exploring how breaking down high-risk activities into manageable components enhances security and efficiency in modern application development pipelines. A research-driven approach to DevSecOps security.",
+  keywords: [
+    "factorial separation of duties",
+    "DevSecOps",
+    "application security",
+    "software security",
+    "compliance",
+    "risk management",
+    "security automation",
+    "development pipeline security",
+    "FLOSS security",
+    "code review",
+    "security controls"
+  ],
+  authors: [{ name: "Aaron Smith" }],
+  openGraph: {
+    title: "Factorial Separation of Duties for Modern AppSec Compliance",
+    description: "Exploring how breaking down high-risk activities into manageable components enhances security and efficiency in modern application development pipelines.",
+    url: "https://phenomsec.com/blog/factorial-separation-duties",
+    type: "article",
+    publishedTime: "2023-03-21T00:00:00.000Z",
+    authors: ["Aaron Smith"],
+    section: "Application Security",
+    tags: ["DevSecOps", "Application Security", "Compliance", "Risk Management"],
+    images: [
+      {
+        url: "/img/fact-separation-mountain-image.svg",
+        width: 800,
+        height: 500,
+        alt: "Software delivery journey visualization - building roads instead of climbing mountains"
+      }
+    ]
+  },
+  alternates: {
+    canonical: "https://phenomsec.com/blog/factorial-separation-duties"
+  }
+};
 
 export default function FactorialSeparationPost() {
   return (
@@ -54,8 +95,8 @@ export default function FactorialSeparationPost() {
                   src="/img/fact-separation-mountain-image.svg"
                   alt="Mountain climbing journey representing the path to reach customers through software delivery"
                   width={800}
-                  height={400}
-                  className="rounded-lg border border-slate-600"
+                  height={500}
+                  className="rounded-lg border border-slate-600 w-full h-auto"
                 />
               </div>
 

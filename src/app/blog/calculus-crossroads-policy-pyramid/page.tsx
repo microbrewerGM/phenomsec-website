@@ -1,5 +1,46 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Calculus Crossroads of Policy Pyramid",
+  description: "An unconventional approach to understanding and managing information security frameworks by drawing parallels between mathematical concepts and policy structures. Mathematical security framework integration.",
+  keywords: [
+    "policy pyramid",
+    "security frameworks",
+    "calculus derivatives",
+    "security policy management",
+    "information security",
+    "mathematical frameworks",
+    "security architecture",
+    "policy management",
+    "organizational security",
+    "governance frameworks",
+    "security integration"
+  ],
+  authors: [{ name: "Phenom Security Group" }],
+  openGraph: {
+    title: "The Calculus Crossroads of Policy Pyramid",
+    description: "An unconventional approach to understanding and managing information security frameworks by drawing parallels between mathematical concepts and policy structures.",
+    url: "https://phenomsec.com/blog/calculus-crossroads-policy-pyramid",
+    type: "article",
+    publishedTime: "2023-04-03T00:00:00.000Z",
+    authors: ["Phenom Security Group"],
+    section: "Security Frameworks",
+    tags: ["Security Frameworks", "Policy Management", "Mathematical Frameworks"],
+    images: [
+      {
+        url: "/img/phenom-security-claim-pyramid.svg",
+        width: 700,
+        height: 600,
+        alt: "Enhanced Claim Pyramid with calculus derivatives mapping for security framework integration"
+      }
+    ]
+  },
+  alternates: {
+    canonical: "https://phenomsec.com/blog/calculus-crossroads-policy-pyramid"
+  }
+};
 
 export default function CalculusCrossroadsPost() {
   return (
@@ -110,7 +151,7 @@ export default function CalculusCrossroadsPost() {
                   alt="Traditional Policy Pyramid showing the hierarchy of policies, processes, standards, and procedures"
                   width={600}
                   height={400}
-                  className="rounded-lg border border-slate-600 mx-auto"
+                  className="rounded-lg border border-slate-600 w-full h-auto"
                 />
               </div>
 
@@ -130,7 +171,7 @@ export default function CalculusCrossroadsPost() {
                   alt="Enhanced Claim Pyramid with seven layers mapped to calculus derivatives, showing the relationship between organizational layers and mathematical concepts"
                   width={600}
                   height={500}
-                  className="rounded-lg border border-slate-600 mx-auto"
+                  className="rounded-lg border border-slate-600 w-full h-auto"
                 />
               </div>
 
