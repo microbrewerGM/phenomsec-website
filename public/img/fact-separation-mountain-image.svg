@@ -1,0 +1,57 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient -->
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="road" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#696969;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#696969;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="800" height="400" fill="url(#sky)"/>
+
+  <!-- Mountains -->
+  <polygon points="0,350 150,150 300,350" fill="url(#mountain)" stroke="#654321" stroke-width="2"/>
+  <polygon points="200,350 350,100 500,350" fill="url(#mountain)" stroke="#654321" stroke-width="2"/>
+  <polygon points="400,350 550,120 700,350" fill="url(#mountain)" stroke="#654321" stroke-width="2"/>
+  <polygon points="600,350 750,80 800,350" fill="url(#mountain)" stroke="#654321" stroke-width="2"/>
+
+  <!-- Snow caps -->
+  <polygon points="300,150 350,100 400,150" fill="white" opacity="0.9"/>
+  <polygon points="500,120 550,120 600,180" fill="white" opacity="0.9"/>
+  <polygon points="700,80 750,80 800,140" fill="white" opacity="0.9"/>
+
+  <!-- Winding road -->
+  <path d="M 0,300 Q 200,280 400,250 Q 600,220 800,200" stroke="url(#road)" stroke-width="20" fill="none"/>
+
+  <!-- Road markings -->
+  <path d="M 50,295 L 100,290 M 150,285 L 200,282 M 250,275 L 300,270 M 350,265 L 400,260 M 450,255 L 500,250 M 550,245 L 600,240 M 650,235 L 700,230 M 750,225 L 800,220" stroke="white" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Base camps/waypoints -->
+  <circle cx="150" cy="280" r="8" fill="#FF6B6B" stroke="#FF0000" stroke-width="2"/>
+  <circle cx="400" cy="250" r="8" fill="#FF6B6B" stroke="#FF0000" stroke-width="2"/>
+  <circle cx="650" cy="230" r="8" fill="#FF6B6B" stroke="#FF0000" stroke-width="2"/>
+
+  <!-- Trees -->
+  <polygon points="100,320 110,280 120,320" fill="#228B22"/>
+  <polygon points="300,300 310,260 320,300" fill="#228B22"/>
+  <polygon points="500,280 510,240 520,280" fill="#228B22"/>
+
+  <!-- Title text -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2C3E50">The Journey to Your Customers</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#2C3E50">Build roads, not just climbing routes</text>
+
+  <!-- Waypoint labels -->
+  <text x="150" y="270" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2C3E50" font-weight="bold">Base Camp</text>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2C3E50" font-weight="bold">Checkpoint</text>
+  <text x="650" y="220" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#2C3E50" font-weight="bold">Summit</text>
+</svg>

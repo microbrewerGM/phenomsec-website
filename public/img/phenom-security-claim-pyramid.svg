@@ -1,0 +1,79 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="500" fill="#f8f9fa"/>
+
+  <!-- Enhanced Pyramid layers (7 layers) -->
+  <!-- Claim (top) -->
+  <polygon points="300,60 250,90 350,90" fill="#7c3aed" stroke="#6d28d9" stroke-width="2"/>
+  <text x="300" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">CLAIM</text>
+
+  <!-- Guideline -->
+  <polygon points="300,60 220,120 380,120 350,90 250,90" fill="#8b5cf6" stroke="#7c3aed" stroke-width="2"/>
+  <text x="300" y="110" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">GUIDELINE</text>
+
+  <!-- Policy -->
+  <polygon points="300,60 190,150 410,150 380,120 220,120" fill="#a78bfa" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="300" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">POLICY</text>
+
+  <!-- Process -->
+  <polygon points="300,60 160,180 440,180 410,150 190,150" fill="#c4b5fd" stroke="#a78bfa" stroke-width="2"/>
+  <text x="300" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">PROCESS</text>
+
+  <!-- Standard -->
+  <polygon points="300,60 130,210 470,210 440,180 160,180" fill="#ddd6fe" stroke="#c4b5fd" stroke-width="2"/>
+  <text x="300" y="200" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="black">STANDARD</text>
+
+  <!-- Procedure -->
+  <polygon points="300,60 100,240 500,240 470,210 130,210" fill="#ede9fe" stroke="#ddd6fe" stroke-width="2"/>
+  <text x="300" y="230" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="black">PROCEDURE</text>
+
+  <!-- Configuration (bottom) -->
+  <polygon points="300,60 70,270 530,270 500,240 100,240" fill="#f3f4f6" stroke="#ede9fe" stroke-width="2"/>
+  <text x="300" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="black">CONFIGURATION</text>
+
+  <!-- Title -->
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1f2937">Enhanced Claim Pyramid</text>
+
+  <!-- Calculus Orders mapping -->
+  <text x="540" y="85" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Pop</text>
+  <text x="540" y="115" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Crackle</text>
+  <text x="540" y="145" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Snap</text>
+  <text x="540" y="175" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Jerk</text>
+  <text x="540" y="205" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Acceleration</text>
+  <text x="540" y="235" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Velocity</text>
+  <text x="540" y="265" font-family="Arial, sans-serif" font-size="10" text-anchor="start" fill="#6366f1" font-weight="bold">Position</text>
+
+  <!-- Arrows showing derivation/integration -->
+  <path d="M 50,150 L 50,250" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="35" y="200" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444" transform="rotate(-90 35 200)">DERIVE</text>
+
+  <path d="M 80,250 L 80,150" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead2)"/>
+  <text x="95" y="200" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#10b981" transform="rotate(90 95 200)">INTEGRATE</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444" />
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7"
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <!-- Key insight -->
+  <text x="300" y="320" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1f2937">Derive from below ↑ | Integrate from above ↓</text>
+
+  <!-- Descriptions -->
+  <text x="50" y="360" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Claims: Fundamental organizational assertions</text>
+  <text x="50" y="375" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Guidelines: Directional frameworks</text>
+  <text x="50" y="390" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Policies: Formal organizational rules</text>
+  <text x="50" y="405" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Processes: Operational workflows</text>
+  <text x="50" y="420" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Standards: Technical specifications</text>
+  <text x="50" y="435" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Procedures: Detailed instructions</text>
+  <text x="50" y="450" font-family="Arial, sans-serif" font-size="11" fill="#374151">• Configurations: Implementation settings</text>
+
+  <!-- Phenom Security branding -->
+  <text x="550" y="490" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#6b7280">Phenom Security Group</text>
+</svg>
