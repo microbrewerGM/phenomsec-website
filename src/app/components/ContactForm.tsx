@@ -148,7 +148,7 @@ export default function ContactForm() {
           <div>
             <div className="text-cyan-400 text-2xl mb-2">🏢</div>
             <h3 className="text-white font-semibold mb-1">Headquarters</h3>
-            <p className="text-slate-300">San Francisco, CA</p>
+            <p className="text-slate-300">Portland, OR</p>
           </div>
         </div>
       </div>

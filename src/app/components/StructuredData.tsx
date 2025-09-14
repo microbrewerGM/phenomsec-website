@@ -9,15 +9,15 @@ export default function StructuredData() {
     "description": "Diverse US-based cybersecurity expertise delivering cutting-edge security solutions for Fortune 500 enterprises. Research-driven. Compliance-focused. Future-ready.",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-555-766-3466",
+      "email": "info@phenomsec.com",
       "contactType": "customer service",
       "areaServed": "US",
       "availableLanguage": ["English"]
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "San Francisco",
-      "addressRegion": "CA",
+      "addressLocality": "Portland",
+      "addressRegion": "OR",
       "addressCountry": "US"
     },
     "sameAs": [
@@ -27,7 +27,7 @@ export default function StructuredData() {
       "@type": "Person",
       "name": "Phenom Security Phoenix"
     },
-    "foundingDate": "2023",
+    "foundingDate": "2003",
     "numberOfEmployees": "50+",
     "industry": "Cybersecurity Services",
     "serviceArea": {

@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Phenom Security Background Information - SECURITY SENSITIVE
+# This folder contains sensitive organizational and personnel data
+# Must NEVER be committed to version control
+phenom-security-background/
+extracted_content/
+*.confidential
+*.sensitive
+background-data/

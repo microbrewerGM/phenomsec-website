@@ -52,6 +52,12 @@ class ContentAnonymizer:
             "Partners", "Associates", "Enterprises", "Holdings"
         ]
 
+        # Company locations for anonymization
+        self.locations = [
+            "Portland", "Seattle", "Austin", "Denver", "Chicago", "Boston",
+            "Atlanta", "Dallas", "Phoenix", "San Diego", "Remote"
+        ]
+
         # Security technologies and frameworks
         self.security_technologies = [
             "SIEM", "EDR", "XDR", "SOAR", "IAM", "PAM", "DLP", "CASB",
@@ -327,7 +333,7 @@ class NetworkShareExtractor:
             "technologies": skills[:6],
             "compliance_frameworks": compliance_exp,
             "education": "Advanced Security Certifications",
-            "location": random.choice(["Remote", "San Francisco", "New York", "Austin", "Seattle"]),
+            "location": random.choice(self.locations),
             "anonymized_id": hashlib.md5(resume_content.encode()).hexdigest()[:8]
         }
 
