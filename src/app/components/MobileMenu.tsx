@@ -44,11 +44,11 @@ export default function MobileMenu() {
               About
             </Link>
             <Link
-              href="#insights"
+              href="/blog"
               className="block text-slate-300 hover:text-cyan-400 transition-colors py-2"
               onClick={() => setIsOpen(false)}
             >
-              Insights
+              Blog
             </Link>
             <Link
               href="#contact"

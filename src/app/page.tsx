@@ -18,7 +18,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <Link href="#services" className="text-slate-300 hover:text-cyan-400 transition-colors">Services</Link>
               <Link href="#about" className="text-slate-300 hover:text-cyan-400 transition-colors">About</Link>
-              <Link href="#insights" className="text-slate-300 hover:text-cyan-400 transition-colors">Insights</Link>
+              <Link href="/blog" className="text-slate-300 hover:text-cyan-400 transition-colors">Blog</Link>
               <Link href="#contact" className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-lg transition-colors">Contact</Link>
             </div>
             <MobileMenu />
@@ -177,24 +177,54 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Latest Security Insights</h2>
-            <p className="text-xl text-slate-300">Stay ahead with our research-driven perspectives</p>
+            <p className="text-xl text-slate-300 mb-6">Stay ahead with our research-driven perspectives on cybersecurity and enterprise security architecture</p>
+            <Link href="/blog" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold text-lg transition-colors">
+              View All Blog Posts
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <article className="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-cyan-400 transition-colors">
-              <div className="text-cyan-400 text-sm font-semibold mb-2">MARCH 21, 2023</div>
-              <h3 className="text-xl font-bold text-white mb-4">Factorial Separation of Duties for Modern AppSec Compliance</h3>
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-400/10 text-cyan-400 border border-cyan-400/20">
+                  Application Security
+                </span>
+                <div className="text-cyan-400 text-sm font-semibold">MARCH 21, 2025</div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4 hover:text-cyan-400 transition-colors">
+                <Link href="/blog/factorial-separation-duties">
+                  Factorial Separation of Duties for Modern AppSec Compliance
+                </Link>
+              </h3>
               <p className="text-slate-300 mb-4">
                 Exploring how breaking down high-risk activities into manageable components enhances security and efficiency in modern application development pipelines.
               </p>
-              <Link href="/blog/factorial-separation-duties" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
+              <div className="flex items-center justify-between">
+                <Link href="/blog/factorial-separation-duties" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
+                <span className="text-slate-400 text-sm">8 min read</span>
+              </div>
             </article>
             <article className="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-cyan-400 transition-colors">
-              <div className="text-cyan-400 text-sm font-semibold mb-2">APRIL 3, 2023</div>
-              <h3 className="text-xl font-bold text-white mb-4">The Calculus Crossroads of Policy Pyramid</h3>
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-400/10 text-cyan-400 border border-cyan-400/20">
+                  Security Frameworks
+                </span>
+                <div className="text-cyan-400 text-sm font-semibold">APRIL 3, 2025</div>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4 hover:text-cyan-400 transition-colors">
+                <Link href="/blog/calculus-crossroads-policy-pyramid">
+                  The Calculus Crossroads of Policy Pyramid
+                </Link>
+              </h3>
               <p className="text-slate-300 mb-4">
                 An unconventional approach to understanding and managing information security frameworks by drawing parallels with mathematical concepts.
               </p>
-              <Link href="/blog/calculus-crossroads-policy-pyramid" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
+              <div className="flex items-center justify-between">
+                <Link href="/blog/calculus-crossroads-policy-pyramid" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
+                <span className="text-slate-400 text-sm">12 min read</span>
+              </div>
             </article>
           </div>
         </div>
@@ -215,10 +245,10 @@ export default function Home() {
               Enterprise cybersecurity excellence through diverse US-based expertise
             </p>
             <div className="flex justify-center space-x-8 mb-8">
-              <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">Services</Link>
-              <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">About</Link>
-              <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">Insights</Link>
-              <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">Contact</Link>
+              <Link href="#services" className="text-slate-400 hover:text-cyan-400 transition-colors">Services</Link>
+              <Link href="#about" className="text-slate-400 hover:text-cyan-400 transition-colors">About</Link>
+              <Link href="/blog" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</Link>
+              <Link href="#contact" className="text-slate-400 hover:text-cyan-400 transition-colors">Contact</Link>
               <Link href="#" className="text-slate-400 hover:text-cyan-400 transition-colors">Privacy</Link>
             </div>
             <div className="text-slate-500 text-sm">
