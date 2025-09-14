@@ -33,7 +33,7 @@ export default function ContactForm() {
       }
     } catch (error) {
       console.error('Contact form submission error:', error);
-      alert('Sorry, there was an error sending your message. Please try again or contact us directly at hello@phenomsec.com');
+      alert('Sorry, there was an error sending your message. Please try again or contact us directly at info@phenomsec.com');
     } finally {
       setIsSubmitting(false);
     }
@@ -139,16 +139,11 @@ export default function ContactForm() {
           </form>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 text-center">
-          <div>
-            <div className="text-cyan-400 text-2xl mb-2">📞</div>
-            <h3 className="text-white font-semibold mb-1">Phone</h3>
-            <p className="text-slate-300">(555) 766-3466</p>
-          </div>
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 text-center max-w-2xl mx-auto">
           <div>
             <div className="text-cyan-400 text-2xl mb-2">✉️</div>
             <h3 className="text-white font-semibold mb-1">Email</h3>
-            <p className="text-slate-300">hello@phenomsec.com</p>
+            <p className="text-slate-300">info@phenomsec.com</p>
           </div>
           <div>
             <div className="text-cyan-400 text-2xl mb-2">🏢</div>
