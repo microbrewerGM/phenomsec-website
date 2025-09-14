@@ -62,7 +62,7 @@ export default function FactorialSeparationPost() {
 
               <h2 className="text-2xl font-bold text-white mb-4 mt-8">Implementation in Modern DevOps</h2>
               <p className="mb-6">
-                In today's fast-paced development environment, Factorial SoD provides a framework for maintaining security without sacrificing speed. By implementing targeted controls at each stage of the development pipeline, organizations can achieve both security and efficiency goals.
+                In today&apos;s fast-paced development environment, Factorial SoD provides a framework for maintaining security without sacrificing speed. By implementing targeted controls at each stage of the development pipeline, organizations can achieve both security and efficiency goals.
               </p>
 
               <div className="bg-slate-700/50 p-6 rounded-lg mt-8 border border-slate-600">

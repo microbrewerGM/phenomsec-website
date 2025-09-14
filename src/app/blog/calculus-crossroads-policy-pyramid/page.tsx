@@ -73,7 +73,7 @@ export default function CalculusCrossroadsPost() {
               <div className="bg-slate-700/50 p-6 rounded-lg mt-8 border border-slate-600">
                 <h3 className="text-lg font-bold text-white mb-3">Explore Advanced Frameworks</h3>
                 <p className="text-sm text-slate-300 mb-4">
-                  This research represents our innovative approach to security policy optimization. Contact us to learn how these frameworks can transform your organization's security posture.
+                  This research represents our innovative approach to security policy optimization. Contact us to learn how these frameworks can transform your organization&apos;s security posture.
                 </p>
                 <Link href="/#contact" className="inline-flex items-center bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-lg transition-colors">
                   Schedule Consultation →
