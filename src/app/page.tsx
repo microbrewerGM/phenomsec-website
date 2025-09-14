@@ -42,12 +42,12 @@ export default function Home() {
               Research-driven. Compliance-focused. Future-ready.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
+              <Link href="#contact" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center">
                 Schedule Consultation
-              </button>
-              <button className="border border-slate-600 hover:border-cyan-400 text-slate-300 hover:text-cyan-400 px-8 py-3 rounded-lg text-lg font-semibold transition-colors">
-                View Case Studies
-              </button>
+              </Link>
+              <Link href="/blog" className="border border-slate-600 hover:border-cyan-400 text-slate-300 hover:text-cyan-400 px-8 py-3 rounded-lg text-lg font-semibold transition-colors text-center">
+                View Security Insights
+              </Link>
             </div>
           </div>
         </div>
