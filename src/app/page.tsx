@@ -186,7 +186,7 @@ export default function Home() {
               <p className="text-slate-300 mb-4">
                 Exploring how breaking down high-risk activities into manageable components enhances security and efficiency in modern application development pipelines.
               </p>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
+              <Link href="/blog/factorial-separation-duties" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
             </article>
             <article className="bg-slate-800/50 p-8 rounded-xl border border-slate-700 hover:border-cyan-400 transition-colors">
               <div className="text-cyan-400 text-sm font-semibold mb-2">APRIL 3, 2023</div>
@@ -194,7 +194,7 @@ export default function Home() {
               <p className="text-slate-300 mb-4">
                 An unconventional approach to understanding and managing information security frameworks by drawing parallels with mathematical concepts.
               </p>
-              <Link href="#" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
+              <Link href="/blog/calculus-crossroads-policy-pyramid" className="text-cyan-400 hover:text-cyan-300 font-semibold">Read More →</Link>
             </article>
           </div>
         </div>
