@@ -44,6 +44,13 @@ export default function MobileMenu() {
               About
             </Link>
             <Link
+              href="/case-studies"
+              className="block text-slate-300 hover:text-cyan-400 transition-colors py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Case Studies
+            </Link>
+            <Link
               href="/blog"
               className="block text-slate-300 hover:text-cyan-400 transition-colors py-2"
               onClick={() => setIsOpen(false)}

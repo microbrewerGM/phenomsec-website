@@ -21,6 +21,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <Link href="#services" className="text-slate-300 hover:text-cyan-400 transition-colors">Services</Link>
               <Link href="#about" className="text-slate-300 hover:text-cyan-400 transition-colors">About</Link>
+              <Link href="/case-studies" className="text-slate-300 hover:text-cyan-400 transition-colors">Case Studies</Link>
               <Link href="/blog" className="text-slate-300 hover:text-cyan-400 transition-colors">Blog</Link>
               <Link href="#contact" className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded-lg transition-colors">Contact</Link>
             </div>
@@ -175,8 +176,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Case Studies Preview */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">Proven Enterprise Results</h2>
+            <p className="text-xl text-slate-300 mb-6">Real-world cybersecurity transformations from Fortune 500 implementations</p>
+            <Link href="/case-studies" className="inline-flex items-center text-cyan-400 hover:text-cyan-300 font-semibold text-lg transition-colors">
+              View All Case Studies
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-cyan-400 transition-colors">
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-400/10 text-cyan-400 border border-cyan-400/20">
+                  Automotive Manufacturing
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3">Supply Chain Security Transformation</h3>
+              <p className="text-slate-300 mb-4 text-sm">
+                Secured 19 subdivisions of North America's leading vehicle wholesaler with comprehensive DevSecOps implementation.
+              </p>
+              <div className="grid grid-cols-2 gap-2 mb-4">
+                <div className="bg-slate-700/50 p-2 rounded text-center">
+                  <div className="text-cyan-400 font-bold text-sm">90%</div>
+                  <div className="text-slate-300 text-xs">Review Time Reduction</div>
+                </div>
+                <div className="bg-slate-700/50 p-2 rounded text-center">
+                  <div className="text-cyan-400 font-bold text-sm">50+</div>
+                  <div className="text-slate-300 text-xs">Dev Teams Secured</div>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-2 py-1 bg-cyan-400/10 text-cyan-400 text-xs rounded">DevSecOps</span>
+                <span className="px-2 py-1 bg-cyan-400/10 text-cyan-400 text-xs rounded">Supply Chain</span>
+              </div>
+            </div>
+
+            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-cyan-400 transition-colors">
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-400/10 text-cyan-400 border border-cyan-400/20">
+                  Food Service/Global
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3">Global Manufacturing Automation</h3>
+              <p className="text-slate-300 mb-4 text-sm">
+                Pioneered security framework for Fortune 500 restaurant corporation's automation initiative across 30,000+ locations.
+              </p>
+              <div className="grid grid-cols-2 gap-2 mb-4">
+                <div className="bg-slate-700/50 p-2 rounded text-center">
+                  <div className="text-cyan-400 font-bold text-sm">30K+</div>
+                  <div className="text-slate-300 text-xs">Global Locations</div>
+                </div>
+                <div className="bg-slate-700/50 p-2 rounded text-center">
+                  <div className="text-cyan-400 font-bold text-sm">100K+</div>
+                  <div className="text-slate-300 text-xs">IoT Devices</div>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-2 py-1 bg-cyan-400/10 text-cyan-400 text-xs rounded">IoT Security</span>
+                <span className="px-2 py-1 bg-cyan-400/10 text-cyan-400 text-xs rounded">AI/ML</span>
+              </div>
+            </div>
+
+            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-cyan-400 transition-colors">
+              <div className="flex items-center justify-between mb-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-400/10 text-cyan-400 border border-cyan-400/20">
+                  Financial Services
+                </span>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-3">Security Infrastructure Consolidation</h3>
+              <p className="text-slate-300 mb-4 text-sm">
+                Rationalized global security perimeter for Fortune 500 financial corporation, achieving 40% TCO reduction.
+              </p>
+              <div className="grid grid-cols-2 gap-2 mb-4">
+                <div className="bg-slate-700/50 p-2 rounded text-center">
+                  <div className="text-cyan-400 font-bold text-sm">40%</div>
+                  <div className="text-slate-300 text-xs">TCO Reduction</div>
+                </div>
+                <div className="bg-slate-700/50 p-2 rounded text-center">
+                  <div className="text-cyan-400 font-bold text-sm">$2.5M+</div>
+                  <div className="text-slate-300 text-xs">Annual Savings</div>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-1">
+                <span className="px-2 py-1 bg-cyan-400/10 text-cyan-400 text-xs rounded">Cost Optimization</span>
+                <span className="px-2 py-1 bg-cyan-400/10 text-cyan-400 text-xs rounded">Infrastructure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Insights/Blog Preview */}
-      <section id="insights" className="py-20">
+      <section id="insights" className="py-20 bg-slate-800/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Latest Security Insights</h2>
@@ -250,9 +346,9 @@ export default function Home() {
             <div className="flex justify-center space-x-8 mb-8">
               <Link href="#services" className="text-slate-400 hover:text-cyan-400 transition-colors">Services</Link>
               <Link href="#about" className="text-slate-400 hover:text-cyan-400 transition-colors">About</Link>
+              <Link href="/case-studies" className="text-slate-400 hover:text-cyan-400 transition-colors">Case Studies</Link>
               <Link href="/blog" className="text-slate-400 hover:text-cyan-400 transition-colors">Blog</Link>
               <Link href="#contact" className="text-slate-400 hover:text-cyan-400 transition-colors">Contact</Link>
-              <Link href="/privacy" className="text-slate-400 hover:text-cyan-400 transition-colors">Privacy</Link>
             </div>
             <div className="text-slate-500 text-sm">
               © 2025 Phenom Security Group. All rights reserved.
