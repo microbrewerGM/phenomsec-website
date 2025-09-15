@@ -198,7 +198,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Supply Chain Security Transformation</h3>
               <p className="text-slate-300 mb-4 text-sm">
-                Secured 19 subdivisions of North America's leading vehicle wholesaler with comprehensive DevSecOps implementation.
+                Secured 19 subdivisions of North America&apos;s leading vehicle wholesaler with comprehensive DevSecOps implementation.
               </p>
               <div className="grid grid-cols-2 gap-2 mb-4">
                 <div className="bg-slate-700/50 p-2 rounded text-center">
@@ -224,7 +224,7 @@ export default function Home() {
               </div>
               <h3 className="text-lg font-bold text-white mb-3">Global Manufacturing Automation</h3>
               <p className="text-slate-300 mb-4 text-sm">
-                Pioneered security framework for Fortune 500 restaurant corporation's automation initiative across 30,000+ locations.
+                Pioneered security framework for Fortune 500 restaurant corporation&apos;s automation initiative across 30,000+ locations.
               </p>
               <div className="grid grid-cols-2 gap-2 mb-4">
                 <div className="bg-slate-700/50 p-2 rounded text-center">
